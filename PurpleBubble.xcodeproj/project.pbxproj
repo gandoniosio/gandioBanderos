@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C8910792F4DAFD200BFAA42 /* Adapty in Frameworks */ = {isa = PBXBuildFile; productRef = 1C8910782F4DAFD200BFAA42 /* Adapty */; };
+		1C8B3A142F803DFE007D4F66 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1C8B3A132F803DFE007D4F66 /* FirebaseCrashlytics */; };
 		1C8C65812F5DF84100A1409F /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 1C8C65802F5DF84100A1409F /* Zip */; };
 		1C8C65842F5DF8A300A1409F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1C8C65832F5DF8A300A1409F /* SnapKit */; };
 		1C8C65872F5DF8BB00A1409F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1C8C65862F5DF8BB00A1409F /* Lottie */; };
@@ -35,6 +36,7 @@
 				1C8C658D2F5DF97000A1409F /* AmplitudeSwift in Frameworks */,
 				1C8C65842F5DF8A300A1409F /* SnapKit in Frameworks */,
 				1C8C658A2F5DF93000A1409F /* AppsFlyerLib-Static in Frameworks */,
+				1C8B3A142F803DFE007D4F66 /* FirebaseCrashlytics in Frameworks */,
 				1C8C65812F5DF84100A1409F /* Zip in Frameworks */,
 				1C8910792F4DAFD200BFAA42 /* Adapty in Frameworks */,
 				1C8C65872F5DF8BB00A1409F /* Lottie in Frameworks */,
@@ -86,6 +88,7 @@
 				1C8C65862F5DF8BB00A1409F /* Lottie */,
 				1C8C65892F5DF93000A1409F /* AppsFlyerLib-Static */,
 				1C8C658C2F5DF97000A1409F /* AmplitudeSwift */,
+				1C8B3A132F803DFE007D4F66 /* FirebaseCrashlytics */,
 			);
 			productName = PurpleBubble;
 			productReference = 1CB29B0E2F3A44C50028EC14 /* PurpleBubble.app */;
@@ -140,6 +143,7 @@
 				1C8C65852F5DF8BB00A1409F /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				1C8C65882F5DF93000A1409F /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
 				1C8C658B2F5DF97000A1409F /* XCRemoteSwiftPackageReference "Amplitude-Swift" */,
+				1C8B3A122F803DFE007D4F66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1CB29B0F2F3A44C50028EC14 /* Products */;
@@ -413,6 +417,14 @@
 				minimumVersion = 3.15.5;
 			};
 		};
+		1C8B3A122F803DFE007D4F66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.11.0;
+			};
+		};
 		1C8C657F2F5DF84100A1409F /* XCRemoteSwiftPackageReference "Zip" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/marmelroy/Zip.git";
@@ -460,6 +472,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1C8910772F4DAFD200BFAA42 /* XCRemoteSwiftPackageReference "AdaptySDK-iOS" */;
 			productName = Adapty;
+		};
+		1C8B3A132F803DFE007D4F66 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C8B3A122F803DFE007D4F66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
 		};
 		1C8C65802F5DF84100A1409F /* Zip */ = {
 			isa = XCSwiftPackageProductDependency;

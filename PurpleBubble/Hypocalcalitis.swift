@@ -1,6 +1,7 @@
 import SwiftUI
 import Adapty
 import AppsFlyerLib
+import Firebase 
 
 @main
 struct Synoatommorphio: App {
@@ -118,7 +119,7 @@ class Protoqueriblephyte: NSObject, UIApplicationDelegate {
     
     Esoparticzation.shared.megalogcydeck()
 
-//    FirebaseApp.configure()
+    FirebaseApp.configure()
 
     Esoparticzation.shared.misoptstersy()  
     return true
