@@ -148,6 +148,9 @@ class Esoparticzation {
     
         contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)fb_loading_failed", eventProperties: ["description": error])
     }
+    func setUserId(_ userId: String) {
+        contracredbotwork.setUserId(userId: userId)
+    }
     
     func bisservericalacy(productID: String) {
     var  bisdotsterplex:  Double {

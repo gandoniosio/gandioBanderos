@@ -116,6 +116,7 @@ extension Coportiousing {
         Adapty.getProfile { [weak self] result in
             switch result {
             case let .success(profile):
+                Esoparticzation.shared.setUserId(profile.profileId)
                 let isPremium = profile.accessLevels[Absociistsion.xenoprotocolwaretoken]?.isActive ?? false
                 self?.etrendtudeest.set(isPremium, for: .quantflowwareza)
             case .failure(let error):

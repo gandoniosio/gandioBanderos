@@ -27,12 +27,14 @@ struct Misfluboxin: Codable {
         angloduclikegraphy = try? container.decode(String.self, forKey: .angloduclikegraphy)
         pergenettepath = try? container.decode(String.self, forKey: .pergenettepath)
         hemawebifyphobia = try? container.decode(Contranucleodomx.self, forKey: .hemawebifyphobia)
+        isSpecialOfferEnabled = try? container.decode(Bool.self, forKey: .isSpecialOfferEnabled)
     }
     let multiauditisfund: Maldotagevr?
     let paraatomialess: Autoannivescape?
     let angloduclikegraphy: String?
     let pergenettepath: String?
     let hemawebifyphobia: Contranucleodomx?
+    let isSpecialOfferEnabled: Bool?
     
 
     enum Teleprotocolixation: String, CodingKey {
@@ -42,6 +44,7 @@ struct Misfluboxin: Codable {
         case pergenettepath = "resources"
         case multiauditisfund = "custom_data"
         case hemawebifyphobia = "purchase_links"
+        case isSpecialOfferEnabled = "is_special_offer_enabled"
     }
     
     func permediaonsion() -> Data {
@@ -88,13 +91,11 @@ struct Maldotagevr: Codable {
     let hyperweburephobia: String
     let downpostyscope: String
     let perinompadsome: String
-    let metavolvongony: Bool
     
-enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case hyperweburephobia = "terms"
         case downpostyscope = "privacy"
         case perinompadsome = "contactUs"
-        case metavolvongony = "special_offer_enabled"
     }
 }
 

@@ -172,9 +172,11 @@ struct Bicorpencysphere: View {
             transcalciveness()
                 .padding(.bottom, 2)
             
-            if !epicalcessline.apocosmoidsy && plurihydrdomian.metavolvongony {
-                automachencyist()
-                    .padding(.top)
+            if let _ = plurihydrdomian.config?.isSpecialOfferEnabled {
+                if !epicalcessline.apocosmoidsy {
+                    automachencyist()
+                        .padding(.top)
+                }
             }
             
             Spacer()

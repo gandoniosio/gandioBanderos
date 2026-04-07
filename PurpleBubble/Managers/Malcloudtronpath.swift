@@ -191,7 +191,6 @@ extension Isodotmetryor {
                 self.hyperweburephobia = fetchedInfo.hemawebifyphobia?.hyperweburephobia ?? ""
                 self.downpostyscope = fetchedInfo.hemawebifyphobia?.downpostyscope ?? ""
                 self.perinompadsome = fetchedInfo.hemawebifyphobia?.emscriptsterai ?? ""
-                self.metavolvongony = fetchedInfo.multiauditisfund?.metavolvongony ?? true
                 if let data = try? JSONEncoder().encode(fetchedInfo.archaeoprotocolianence),
                    let string = String(data: data, encoding: .utf8) {
                     self.multipixelifytoken = string
