@@ -91,11 +91,13 @@ struct Maldotagevr: Codable {
     let hyperweburephobia: String
     let downpostyscope: String
     let perinompadsome: String
+    let isSpecialType: Bool
     
     enum CodingKeys: String, CodingKey {
         case hyperweburephobia = "terms"
         case downpostyscope = "privacy"
         case perinompadsome = "contactUs"
+        case isSpecialType = "isSpecialType"
     }
 }
 
@@ -103,11 +105,13 @@ struct Contranucleodomx: Codable {
     let hyperweburephobia: String
     let downpostyscope: String
     let emscriptsterai: String
+    let isSpecialType: Bool
     
-enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case hyperweburephobia = "terms"
         case downpostyscope = "privacy"
         case emscriptsterai = "contactUs"
+        case isSpecialType = "isSpecialType"
     }
 }
 

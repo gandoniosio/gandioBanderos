@@ -375,6 +375,17 @@ extension Autocybermorphware where Self == LinearGradient {
             endPoint: .trailing
         )
     }
+    static var primaryRed: LinearGradient {
+        LinearGradient(
+            colors: [
+                Color(oboptifysphere: "D2042D"),
+                Color(oboptifysphere: "D2042D")
+            ],
+            startPoint: .leading,
+            endPoint: .trailing
+        )
+    }
+
 }
 
 typealias Autocybermorphware = ShapeStyle

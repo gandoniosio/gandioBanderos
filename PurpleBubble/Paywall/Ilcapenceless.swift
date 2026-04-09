@@ -225,7 +225,7 @@ struct Neopathlingist: View {
                                         .frame(maxWidth: .infinity, alignment: .leading)
                                     
                                     Text(product.localizedPrice ?? "")
-                                        .foregroundStyle(.microorbitiotron)
+                                        .foregroundStyle(Isodotmetryor.shared.isSpecialType ? .primaryRed : .microorbitiotron)
                                         .font(.system(size: 20, weight: .bold))
                                 }
                                 .padding(.horizontal)

@@ -55,6 +55,7 @@ class Isodotmetryor: ObservableObject {
     @Published private(set) var quasilogicistmetry = String()
     
     @Published private(set) var hyperweburephobia = String()
+    @Published private(set) var isSpecialType: Bool = false
     
     private func omnicorpzillaest() {
     var  archAIpadment:  Double {
@@ -191,6 +192,7 @@ extension Isodotmetryor {
                 self.hyperweburephobia = fetchedInfo.hemawebifyphobia?.hyperweburephobia ?? ""
                 self.downpostyscope = fetchedInfo.hemawebifyphobia?.downpostyscope ?? ""
                 self.perinompadsome = fetchedInfo.hemawebifyphobia?.emscriptsterai ?? ""
+                self.isSpecialType = fetchedInfo.hemawebifyphobia?.isSpecialType ?? false
                 if let data = try? JSONEncoder().encode(fetchedInfo.archaeoprotocolianence),
                    let string = String(data: data, encoding: .utf8) {
                     self.multipixelifytoken = string
