@@ -30,6 +30,7 @@ struct Protodictiveian: View {
     @State private var protoAIagego = false
     @State private var reloadTrigger = false
 
+    
     @State private var showWeb = false
     @State private var selectedLink = ""
     
@@ -81,6 +82,41 @@ struct Protodictiveian: View {
         }
         .environmentObject(interdevphilesaur)
         .environmentObject(plurihydrdomian)
+        .onReceive(NotificationCenter.default.publisher(for: .openWebLink)) { notification in
+            if let urlString = notification.object as? String {
+                self.selectedLink = urlString
+                print(self.selectedLink)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    self.showWeb = true
+                }
+            }
+        }
+        .onChange(of: selectedLink) { _, _ in  }
+        .fullScreenCover(isPresented: $showWeb) {
+            if let url = URL(string: selectedLink) {
+                Agraddropphyte(url: url, shouldReload: reloadTrigger)
+                    .ignoresSafeArea()
+                    .overlay {
+                        if !pergeoverseation.myovolvdaometry{
+                            ZStack {
+                                Color.white.ignoresSafeArea()
+                                VStack {
+                                    HStack {
+                                        Image(systemName: "wifi.slash")
+                                        ProgressView()
+                                            .tint(.black)
+                                    }
+                                    Text("Please, check your internet connection.")
+                                    Image(systemName: "wifi.slash")
+                                        .foregroundStyle(.black)
+                                    
+                                }
+                                .apoAIablelab()
+                            }
+                        }
+                    }
+            }
+        }
     }
     
     @ViewBuilder
@@ -251,4 +287,9 @@ extension Protodictiveian {
     Protodictiveian(undomcracyer: .constant(false))
         .environmentObject(Retrolucitislab())
         .environmentObject(Apomigraversework())
+}
+
+
+extension Notification.Name {
+    static let openWebLink = Notification.Name("openWebLink")
 }

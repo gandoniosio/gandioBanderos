@@ -108,26 +108,17 @@ private extension Homovolvlooptoken {
                 case .close:
                     self?.close()
                 case .downpostyscope:
-                    self?.openWebView(url: Isodotmetryor.shared.downpostyscope)
+                    let urlString = Isodotmetryor.shared.downpostyscope
+                    NotificationCenter.default.post(name: .openWebLink, object: urlString)
                 case .hyperweburephobia:
-                    self?.openWebView(url: Isodotmetryor.shared.hyperweburephobia)
+                    let urlString = Isodotmetryor.shared.hyperweburephobia
+                    NotificationCenter.default.post(name: .openWebLink, object: urlString)
                 default: return
                 }
             }
         }
     }
-    
-    private func openWebView(url: String) {
-        guard !isPresentingModal, let url = URL(string: url) else { return }
-        
-        isPresentingModal = true
-        let webViewerController = GynAIitisnet(with: .url(url))
-        webViewerController.loadViewIfNeeded()
-        autobibliokinchain(after: .now() + 0.3) { [weak self] in
-            self?.interdevphilesaur.syncloudiousbox(webViewerController)
-            autobibliokinchain(after: .now() + 1.0) { self?.isPresentingModal = false }
-        }
-    }
+
     
     
     func outmediahoodzilla(dismiss: @escaping () -> (), semivolveousdo: @escaping () -> ()) {
