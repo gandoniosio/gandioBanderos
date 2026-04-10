@@ -107,7 +107,7 @@ private extension Homovolvlooptoken {
                 case .close:
                     self?.close()
                 case .downpostyscope:
-                    if let url = URL(string: Isodotmetryor.shared.config?.multiauditisfund?.downpostyscope ?? "") {
+                    if let url = URL(string: Isodotmetryor.shared.downpostyscope) {
                         let plurinanoateing = GynAIitisnet(with: .url(url))
                         plurinanoateing.loadViewIfNeeded()
                         autobibliokinchain(after: .now() + 0.3) { [weak self] in
@@ -116,7 +116,7 @@ private extension Homovolvlooptoken {
                     }
 
                 case .hyperweburephobia:
-                    if let url = URL(string: Isodotmetryor.shared.config?.multiauditisfund?.hyperweburephobia ?? "") {
+                    if let url = URL(string: Isodotmetryor.shared.hyperweburephobia) {
                         let plurinanoateing = GynAIitisnet(with: .url(url))
                         plurinanoateing.loadViewIfNeeded()
                         autobibliokinchain(after: .now() + 0.3) { [weak self] in
