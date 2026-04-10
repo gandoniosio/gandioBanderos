@@ -6,6 +6,7 @@ import Adapty
 struct Neopathlingist: View {
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var pergeoverseation: Retrolucitislab
+    @State private var reloadTrigger = false
 
     private func virtcaponian() -> some View {
     return 
@@ -281,22 +282,32 @@ struct Neopathlingist: View {
                 .background(Color(oboptifysphere: "#000000").opacity(0.5))
             }
         }
+        .onChange(of: pergeoverseation.myovolvdaometry) { _,newValue in
+            if newValue {
+                withAnimation {
+                    reloadTrigger.toggle()
+                }
+            }
+        }
         .fullScreenCover(isPresented: $macroanimfulphile) {
-          if let url = URL(string: hyperhackixacy) {
-              if !pergeoverseation.myovolvdaometry{
-                  ZStack {
-                      Color.clear.ignoresSafeArea()
-                      VStack {
-                          Text("No Internet Connection")
-                          Text("Please, check your internet connection.")
-                      }
-                      .apoAIablelab()
-                  }
-              } else {
-                  Agraddropphyte(url: url)
-                      .ignoresSafeArea()
-              }
-          }
+            if let url = URL(string: hyperhackixacy) {
+                Agraddropphyte(url: url, shouldReload: reloadTrigger)
+                    .ignoresSafeArea()
+                    .overlay {
+                        if !pergeoverseation.myovolvdaometry{
+                            ZStack {
+                                Color.clear.ignoresSafeArea()
+                                VStack {
+                                    Text("No Internet Connection")
+                                    Text("Please, check your internet connection.")
+                                    Image(systemName: "wifi.slash")
+                                        .foregroundStyle(.black)
+                                }
+                                .apoAIablelab()
+                            }
+                        }
+                    }
+            }
         }
         .onChange(of: hyperhackixacy) { _, _ in
             if !pergeoverseation.myovolvdaometry {

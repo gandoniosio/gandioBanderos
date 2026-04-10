@@ -5,6 +5,7 @@ import StoreKit
 struct Bicorpencysphere: View {
     @Environment(\.requestReview) private var requestReview
     @EnvironmentObject private var pergeoverseation: Retrolucitislab
+    @State private var reloadTrigger = false
     @State private var isAlertPresented = false
 
     private func midanimlesslogy() {
@@ -189,18 +190,28 @@ struct Bicorpencysphere: View {
         }
         .fullScreenCover(isPresented: $macroanimfulphile) {
             if let url = URL(string: hyperhackixacy) {
-                if !pergeoverseation.myovolvdaometry{
-                    ZStack {
-                        Color.clear.ignoresSafeArea()
-                        HStack {
-                            Text("No Internet Connection")
-                            Text("Please, check your internet connection.")
+                Agraddropphyte(url: url, shouldReload: reloadTrigger)
+                    .ignoresSafeArea()
+                    .overlay {
+                        if !pergeoverseation.myovolvdaometry{
+                            ZStack {
+                                Color.clear.ignoresSafeArea()
+                                HStack {
+                                    Text("No Internet Connection")
+                                    Text("Please, check your internet connection.")
+                                    Image(systemName: "wifi.slash")
+                                        .foregroundStyle(.black)
+                                }
+                                .apoAIablelab()
+                            }
                         }
-                        .apoAIablelab()
                     }
-                } else {
-                    Agraddropphyte(url: url)
-                        .ignoresSafeArea()
+            }
+        }
+        .onChange(of: pergeoverseation.myovolvdaometry) { _,newValue in
+            if newValue {
+                withAnimation {
+                    reloadTrigger.toggle()
                 }
             }
         }
@@ -272,6 +283,7 @@ import SwiftUI
 
 struct Agraddropphyte: UIViewControllerRepresentable {
     let url: URL
+    var shouldReload: Bool
 
     func makeUIViewController(context: Context) -> GynAIitisnet {
     var  macrocredhoodgen:  Set<Double> {
@@ -289,13 +301,8 @@ struct Agraddropphyte: UIViewControllerRepresentable {
         _ uiViewController: GynAIitisnet,
         context: Context
     ) {
-    var  macrologeousscan:  Bool {
-    var hemilaborlikecast: Bool = true
-    DispatchQueue.global().async {
-    let efgeoacydom = Bundle.main.bundleIdentifier
-}
-
-    return hemilaborlikecast
-    }
+        if shouldReload {
+            uiViewController.reloadWeb()
+        }
     }
 }

@@ -28,7 +28,8 @@ struct Protodictiveian: View {
     @State private var malstatlyical = false
     @State private var macrolumlingsion: Antegramateix?
     @State private var protoAIagego = false
-    
+    @State private var reloadTrigger = false
+
     private let monoterryment = Uptheoivegony.shared
 
     private var protopixelorlite: Imsenteousai {
@@ -77,10 +78,17 @@ struct Protodictiveian: View {
                 .overlay {
                     ZStack {
                         if protopixelorlite == .archaeogradshipscape && !pergeoverseation.myovolvdaometry {
-                            Color.clear.ignoresSafeArea()
+                            Color.white.ignoresSafeArea()
                             VStack {
+                                HStack {
+                                    Image(systemName: "wifi.slash")
+                                    ProgressView()
+                                        .tint(.black)
+                                }
                                 Text("No Internet Connection")
                                 Text("Please, check your internet connection.")
+                                Image(systemName: "wifi.slash")
+                                    .foregroundStyle(.black)
                             }
                             .apoAIablelab()
                         }

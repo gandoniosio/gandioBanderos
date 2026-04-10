@@ -110,6 +110,10 @@ final class GynAIitisnet: Autoformlessdao, Zspamstergo {
 
 // WKScriptMessageHandler
 extension GynAIitisnet: WKScriptMessageHandler {
+    func reloadWeb() {
+        forevidchainial()
+        emcodeencytherm()
+    }
     func userContentController(
         _ userContentController: WKUserContentController,
         didReceive message: WKScriptMessage
