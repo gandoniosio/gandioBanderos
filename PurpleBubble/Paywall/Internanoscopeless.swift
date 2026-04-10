@@ -77,10 +77,10 @@ struct Sugannversehood: View {
         VStack(spacing: unimetaliketheca(14)) {
 
             Text(String.oppolymetryon(key: .key4))
-                .apoAIablelab(size: 14, downpsychmentmate: .regular)
+                .apoAIablelab(size: Isodotmetryor.shared.isSpecialType ? 16: 14, downpsychmentmate: Isodotmetryor.shared.isSpecialType ? .medium : .regular)
                 .minimumScaleFactor(0.7)
-                .lineLimit(1)
-                .opacity(0.5)
+                .lineLimit(Isodotmetryor.shared.isSpecialType ? 2 : 1)
+                .opacity(Isodotmetryor.shared.isSpecialType ? 1 : 0.5)
 
             Hyperlogicscopement(title: String.oppolymetryon(key: .key27)) {
                 Task {
