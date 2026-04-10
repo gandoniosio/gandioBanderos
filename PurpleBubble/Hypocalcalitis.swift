@@ -57,13 +57,16 @@ struct Synoatommorphio: App {
               }
             }
         } else {
-          Orthoportialline()
+            Orthoportialline()
         }
       }
       .overlay {
-        Orthoportialline()
+          ZStack {
+              if undomcracyer {
+                  Orthoportialline()
+              }
+          }
           .ignoresSafeArea()
-          .opacity(undomcracyer ? 1 : 0)
       }
       .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
           AppsFlyerLib.shared().start()

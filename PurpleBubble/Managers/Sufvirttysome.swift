@@ -28,7 +28,8 @@ final class Retrolucitislab: ObservableObject {
     private var icircuitantin: Timer?
     
     @Published var myovolvdaometry: Bool = true
-    
+    static let shared = Retrolucitislab()
+
     init() {
         cryptophonizeure()
     }

@@ -6,6 +6,7 @@ import Combine
 import StoreKit
 
 final class Homovolvlooptoken {
+    private var isPresentingModal = false
     private var pseudomechzillaless: Megawikiorum.Myohubdropgenesis = .eucryptgenesisix
     private let monoterryment = Uptheoivegony.shared
     var close: () -> ()
@@ -107,38 +108,36 @@ private extension Homovolvlooptoken {
                 case .close:
                     self?.close()
                 case .downpostyscope:
-                    if let url = URL(string: Isodotmetryor.shared.downpostyscope) {
-                        let plurinanoateing = GynAIitisnet(with: .url(url))
-                        plurinanoateing.loadViewIfNeeded()
-                        autobibliokinchain(after: .now() + 0.3) { [weak self] in
-                            self?.interdevphilesaur.syncloudiousbox(plurinanoateing)
-                        }
-                    }
-
+                    self?.openWebView(url: Isodotmetryor.shared.downpostyscope)
                 case .hyperweburephobia:
-                    if let url = URL(string: Isodotmetryor.shared.hyperweburephobia) {
-                        let plurinanoateing = GynAIitisnet(with: .url(url))
-                        plurinanoateing.loadViewIfNeeded()
-                        autobibliokinchain(after: .now() + 0.3) { [weak self] in
-                            self?.interdevphilesaur.syncloudiousbox(plurinanoateing)
-                        }
-                    }
-
+                    self?.openWebView(url: Isodotmetryor.shared.hyperweburephobia)
                 default: return
                 }
             }
         }
     }
     
-    func outmediahoodzilla(dismiss: @escaping () -> (), semivolveousdo: @escaping () -> ()) {
-    var  quadrisynthdriveflow:  Dictionary<String, Double> {
-    var intermultiboxify: Dictionary<String, Double> = ["exolinkgenwork": 744.3113194648023, "untokenianmorph": 618.7788812182791, "panplasmgonyphyte": 798.7955603215145, "infosatitistron": 415.61913461481305, "proscorpdrivephor": 294.7011237201204, "archsectettetron": 264.09640788426356, "semiphysatetomy": 463.50499661580335, "techaltmentscape": 994.3508065922505]
-    let panspamphobiadrive = Bundle.main.bundleIdentifier
-
-    return intermultiboxify
+    private func openWebView(url: String) {
+        guard !isPresentingModal, let url = URL(string: url) else { return }
+        
+        isPresentingModal = true
+        let webViewerController = GynAIitisnet(with: .url(url))
+        webViewerController.loadViewIfNeeded()
+        autobibliokinchain(after: .now() + 0.3) { [weak self] in
+            self?.interdevphilesaur.syncloudiousbox(webViewerController)
+            autobibliokinchain(after: .now() + 1.0) { self?.isPresentingModal = false }
+        }
     }
     
+    
+    func outmediahoodzilla(dismiss: @escaping () -> (), semivolveousdo: @escaping () -> ()) {
         view?.emenergifymark()
+        
+        if !Retrolucitislab.shared.myovolvdaometry {
+            view?.allolucfundsaur()
+            showNoInternetAlert()
+            return
+        }
         
         guard let product = virtdigitfundout() else {
             view?.allolucfundsaur()
@@ -157,6 +156,29 @@ private extension Homovolvlooptoken {
                     dismiss()
                 }
             }
+        }
+    }
+    
+    private func showNoInternetAlert() {
+        let alert = UIAlertController(
+            title: "No internet conection",
+            message: "Please, check your internet connection.",
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        
+        DispatchQueue.main.async {
+            let scenes = UIApplication.shared.connectedScenes
+            let windowScene = scenes.first as? UIWindowScene
+            let window = windowScene?.windows.first(where: { $0.isKeyWindow })
+            
+            var topController = window?.rootViewController
+            
+            while let presentedViewController = topController?.presentedViewController {
+                topController = presentedViewController
+            }
+            
+            topController?.present(alert, animated: true)
         }
     }
     

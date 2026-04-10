@@ -296,12 +296,15 @@ struct Neopathlingist: View {
                     .overlay {
                         if !pergeoverseation.myovolvdaometry{
                             ZStack {
-                                Color.clear.ignoresSafeArea()
+                                Color.white.ignoresSafeArea()
                                 VStack {
+                                    HStack {
+                                        Image(systemName: "wifi.slash")
+                                        ProgressView()
+                                            .tint(.black)
+                                    }
                                     Text("No Internet Connection")
                                     Text("Please, check your internet connection.")
-                                    Image(systemName: "wifi.slash")
-                                        .foregroundStyle(.black)
                                 }
                                 .apoAIablelab()
                             }
