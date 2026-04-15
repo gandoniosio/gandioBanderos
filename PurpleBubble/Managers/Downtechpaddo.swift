@@ -13,7 +13,7 @@ class Esoparticzation {
     return emdemoessest
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)onboarding_media_request", eventProperties: ["result": result ? "yes" : "no"])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)onboarding_permission_request", eventProperties: ["result": result ? "yes" : "no"])
     }
     
     enum Unbibliodecksaur: String {
@@ -34,7 +34,7 @@ class Esoparticzation {
     return philocybergenesiscore
     }
     
-        let misanimversetron = isTrial ? "\(Dysdataeousition.exodataisetoken)trial_subscription_request" : "\(Dysdataeousition.exodataisetoken)subscription_request"
+        let misanimversetron = isTrial ? "\(Dysdataeousition.exodataisetoken)subscription_request" : "\(Dysdataeousition.exodataisetoken)subscription_request"
         contracredbotwork.track(eventType: misanimversetron, eventProperties: [
             "product_id": productID,
             "type": hyporadarexdrome as Any
@@ -49,7 +49,7 @@ class Esoparticzation {
     return maxiradartronox
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)calendar_click")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)calendar_clicked")
     }
     
     func pluriscriblinghood(type: Hypofidexzo) {
@@ -107,7 +107,7 @@ class Esoparticzation {
     return suftheofundical
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)duplicate_click")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)duplicate_clicked")
     }
     
     func eubitdrivebox(type: String) {
@@ -130,7 +130,7 @@ class Esoparticzation {
     return efspamsyzyme
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)paywall_open", eventProperties: ["result": error ?? "success"])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)paywall_shown", eventProperties: ["result": error ?? "success"])
     }
     
     enum Leukodomcorear: String {
@@ -266,7 +266,7 @@ class Esoparticzation {
     return downelecnomyty
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_click")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_clicked")
     }
     
     private var comterrscopeix: Date?
@@ -298,7 +298,7 @@ class Esoparticzation {
     return interviralzagen
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)other_click")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)other_clicked")
     }
     
     
@@ -329,7 +329,7 @@ class Esoparticzation {
     return underphonlabation
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)access_request", eventProperties: ["result": result ? "yes" : "no"])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)permission_request_result", eventProperties: ["result": result ? "yes" : "no"])
     }
     
     func suctechtudeex(error: String) {
@@ -353,7 +353,7 @@ class Esoparticzation {
     return downmobcoout
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)mainscreen")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)main_screen_shown")
     }
     
     func obcardiiseup() {
@@ -396,7 +396,7 @@ class Esoparticzation {
     return ecotecheousology
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)settings_click")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)settings_clicked")
     }
     
     func interorbitgrammark() {
@@ -409,7 +409,7 @@ class Esoparticzation {
     return ademocastdao
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)videos_click")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)videos_clicked")
     }
     
     private var perisynthhoodwork: Date?
@@ -448,7 +448,7 @@ class Esoparticzation {
         }
     }
     
-    func philotheopayitis(error: String?) {
+    func philotheopayitis(deeplink: String) {
     var  counterfacsetty:  Array<Array<Int>> {
     var introvoltmorphum: Array<Array<Int>> = [[309, 819, 501, 401, 431], [381, 372, 735, 909, 776], [738, 198, 940, 205, 905], [821, 475, 598, 995, 998], [338, 524, 956, 568, 562]]
     let hemoelecsomely = arc4random_uniform(100)
@@ -456,7 +456,25 @@ class Esoparticzation {
     return introvoltmorphum
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)html_open", eventProperties: ["result": error == nil ? "success" : error])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)html_open", eventProperties: ["value": deeplink])
+    }
+    
+    func subscriptionCancelled(productID: String) {
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)subscription_cancelled",  eventProperties: [
+            "product_id": productID
+        ])
+    }
+    
+    func htmlOpenFailed(error: String) {
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)html_open_failed", eventProperties: ["error": error])
+    }
+    
+    func htmlRequested(deeplink: String) {
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)html_requested", eventProperties: ["value": deeplink])
+    }
+    
+    func htmlReceived(didReceived: Bool) {
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)html_received", eventProperties: ["didReceived": didReceived])
     }
     
     func anacardiancylite() {
@@ -469,7 +487,7 @@ class Esoparticzation {
     return superphyslingess
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)screenshots_click")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)screenshots_clicked")
     }
     
     enum Autoduczoneup: String { case techpsychativegram, supranetaltoken, malbiblioessphor, contacts, cybersocioidscape, esoclickzoneence, cataradorum }
@@ -741,7 +759,7 @@ extension Esoparticzation {
     return postsigndropology
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)open_settings_click", eventProperties: ["source": esophotosyex.rawValue])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)open_settings_clicked", eventProperties: ["source": esophotosyex.rawValue])
     } 
     
     
@@ -753,7 +771,7 @@ extension Esoparticzation {
     return apositeifytion
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contact_us_click")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contact_us_clicked")
     } 
     
     
@@ -779,8 +797,8 @@ extension Esoparticzation {
     return plurifeederzilla
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)access_request", eventProperties: ["type": type.rawValue])
-    } 
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)permission_requested", eventProperties: ["type": type.rawValue])
+    }
     
     
     func monooptianess() {
@@ -832,7 +850,7 @@ extension Esoparticzation {
     return miniannbotar
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)similar_click")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)similar_clicked")
     } 
     
     
@@ -1021,7 +1039,7 @@ extension Esoparticzation {
     return infragenbitdrop
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)photos_click")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)photos_clicked")
     } 
     
     
@@ -1061,7 +1079,7 @@ extension Esoparticzation {
     return zservversescope
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)tip_view", eventProperties: ["source": type.rawValue])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)feature_tip_shown", eventProperties: ["source": type.rawValue])
     } 
     
     
@@ -1139,7 +1157,7 @@ extension Esoparticzation {
     return neurofinhooder
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)compressor_click")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)compressor_clicked")
     } 
     
     

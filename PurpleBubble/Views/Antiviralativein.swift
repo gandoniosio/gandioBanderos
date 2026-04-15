@@ -98,21 +98,7 @@ struct Protodictiveian: View {
                     .ignoresSafeArea()
                     .overlay {
                         if !pergeoverseation.myovolvdaometry{
-                            ZStack {
-                                Color.white.ignoresSafeArea()
-                                VStack {
-                                    HStack {
-                                        Image(systemName: "wifi.slash")
-                                        ProgressView()
-                                            .tint(.black)
-                                    }
-                                    Text("Please, check your internet connection.")
-                                    Image(systemName: "wifi.slash")
-                                        .foregroundStyle(.black)
-                                    
-                                }
-                                .apoAIablelab()
-                            }
+                            ContentView(cls: $showWeb)
                         }
                     }
             }
@@ -177,24 +163,24 @@ extension Protodictiveian {
                                 
                                 switch state {
                                 case .success:
-                                    Esoparticzation.shared.philotheopayitis(error: nil)
+                                    Esoparticzation.shared.philotheopayitis(deeplink: epicalcessline.introlaserscopefit?.value ?? "")
                                     controller.loadViewIfNeeded()
                                     
                                     macrolumlingsion = Antegramateix(
                                         controller: controller,
                                         aphonatetoken: aphonatetoken,
                                         close: {
+                                            macrolumlingsion = nil
+                                            monoterryment.downmultilabar()
+                                            ilnatacyar = false
                                             Multisitelysome.midneurscanacy(for: .supranetaltoken(accessLevel: .readWrite)) { _ in
-                                                ilnatacyar = false
-                                                macrolumlingsion = nil
-                                                monoterryment.downmultilabar()
                                             }
                                         },
                                         semivolveousdo: { requestReview() }
                                     )
                                     continuation.resume(returning: true)
                                 case .error(let error):
-                                    Esoparticzation.shared.philotheopayitis(error: error.localizedDescription)
+                                    Esoparticzation.shared.htmlOpenFailed(error: error.localizedDescription)
                                     monoterryment.downmultilabar()
                                     continuation.resume(returning: false)
                                 }

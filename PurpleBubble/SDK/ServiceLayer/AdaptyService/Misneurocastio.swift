@@ -75,9 +75,13 @@ final class Coportiousing: Maloptsomedo {
                     self?.entfragcocore.send(false)
                     didFinishPurchase(false)
                 }
+                if purchaserInfo.isPurchaseCancelled {
+                    Esoparticzation.shared.subscriptionCancelled(productID: product.vendorProductId)
+                }
             case .failure(let error):
                 self?.etrendtudeest.set(false, for: .quantflowwareza)
                 self?.entfragcocore.send(false)
+                Esoparticzation.shared.subscriptionCancelled(productID: product.vendorProductId)
                 didFinishPurchase(false)
             }
         }

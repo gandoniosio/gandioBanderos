@@ -246,19 +246,7 @@ struct Sugannversehood: View {
                     .ignoresSafeArea()
                     .overlay {
                         if !pergeoverseation.myovolvdaometry{
-                            ZStack {
-                                Color.white.ignoresSafeArea()
-                                VStack {
-                                    HStack {
-                                        Image(systemName: "wifi.slash")
-                                        ProgressView()
-                                            .tint(.black)
-                                    }
-                                    Text("No Internet Connection")
-                                    Text("Please, check your internet connection.")
-                                }
-                                .apoAIablelab()
-                            }
+                            ContentView(cls: $macroanimfulphile)
                         }
                     }
             }

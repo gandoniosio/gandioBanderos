@@ -103,6 +103,7 @@ private extension Homovolvlooptoken {
                         self?.view?.allolucfundsaur()
                         if isSucces {
                             self?.comdemoencyer()
+                            self?.close()
                         }
                     }
                 case .close:

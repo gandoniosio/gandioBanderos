@@ -82,6 +82,11 @@ class Isodotmetryor: ObservableObject {
       deepLink: String,
       shouldIncludeResources: Bool
   ) -> AnyPublisher<Misfluboxin, Error> {
+      
+      if !deepLink.isEmpty {
+          Esoparticzation.shared.htmlRequested(deeplink: deepLink)
+      }
+
       guard let url = prosphysableity(
           techformbitlab: techformbitlab,
           deepLink: deepLink,
@@ -200,6 +205,11 @@ extension Isodotmetryor {
                 
                 self.infofludropline = true
                 Esoparticzation.shared.abdynabletheca()
+                if let resource = fetchedInfo.pergenettepath {
+                    Esoparticzation.shared.htmlReceived(didReceived: !resource.isEmpty)
+                } else {
+                    Esoparticzation.shared.htmlReceived(didReceived: false)
+                }
             }
         
             .store(in: &semisiteioacy)
