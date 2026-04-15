@@ -187,6 +187,7 @@ struct Bicorpencysphere: View {
         }
         .sheet(isPresented: $counternetcidework) {
             Aponeurocastverse(items: [Dysdataeousition.pluristatmorphout])
+                .presentationDetents([.medium])
         }
         .fullScreenCover(isPresented: $macroanimfulphile) {
             if let url = URL(string: hyperhackixacy) {

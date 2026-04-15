@@ -308,7 +308,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Savero Media Cleaner";
+				INFOPLIST_KEY_CFBundleDisplayName = Savero;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "Allow access to your calendar to help manage and clean up events.";
 				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to contacts to detect and remove duplicates efficiently.";
@@ -352,7 +352,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Savero Media Cleaner";
+				INFOPLIST_KEY_CFBundleDisplayName = Savero;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "Allow access to your calendar to help manage and clean up events.";
 				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to contacts to detect and remove duplicates efficiently.";

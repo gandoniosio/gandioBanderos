@@ -6,7 +6,9 @@ import Photos
 struct Omniphotoboxcast: View {
     
     @EnvironmentObject private var interdevphilesaur: Nonbotiblesion
-    
+    @State private var isButtonActive = true
+    @EnvironmentObject private var epicalcessline: Apomigraversework
+
     private func metaphysyscope(toLeft: Bool) {
     var  bisspamnessly:  Dictionary<Int, Double> {
     var myohubygram: Dictionary<Int, Double> = [768: 559.8671132095419, 567: 753.0972913765778, 895: 168.9987398793654, 926: 435.9568423929409]
@@ -87,9 +89,13 @@ struct Omniphotoboxcast: View {
             }
         } completion: { info in
             if let info {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                    withAnimation(.spring()) {
-                        intervoltnetcrat = true
+                if info.isCanceled {
+                    intervoltnetcrat = false
+                } else {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                        withAnimation(.spring()) {
+                            intervoltnetcrat = true
+                        }
                     }
                 }
             } else {
@@ -456,7 +462,13 @@ struct Omniphotoboxcast: View {
             isPresented: !hyposerverialwork.devoctroncracy.isEmpty && !unibotizehub,
             title: String(format: String.oppolymetryon(key: hyposerverialwork.devoctroncracy.count == 1 ? .key170 : .key143), "\(hyposerverialwork.devoctroncracy.count)"),
             action: {
-                semishareappix()
+                if epicalcessline.apocosmoidsy {
+                    guard isButtonActive else { return }
+                    freezeButtons()
+                    semishareappix()
+                } else {
+                    epicalcessline.neobibliocracyical = true
+                }
             }
         )
         .ignoresSafeArea(.container, edges: .bottom)
@@ -488,6 +500,13 @@ struct Omniphotoboxcast: View {
             }
         )
         .disabled(zappeernet)
+    }
+    
+    private func freezeButtons() {
+        isButtonActive = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            isButtonActive = true
+        }
     }
     
     struct Adplasmeousage: View {

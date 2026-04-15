@@ -18,12 +18,12 @@ struct Duoblockanceage: View {
     }
     
     private var ambiaerophilephile: CGFloat {
-        guard anaradareeroid > 0 else { return 0.5 }
+        guard anaradareeroid > 0 else { return 0 }
         return CGFloat(esodomcasteous) / CGFloat(anaradareeroid)
     }
     
     private var xenogenversevr: CGFloat {
-        guard anaradareeroid > 0 else { return 0.5 }
+        guard anaradareeroid > 0 else { return 0 }
         return CGFloat(entformhoodtoken) / CGFloat(anaradareeroid)
     }
     
@@ -50,6 +50,12 @@ struct Duoblockanceage: View {
                 
                 ZStack(alignment: .leading) {
 
+                    if ambiaerophilephile == 0 && xenogenversevr == 0 {
+                        Capsule()
+                            .fill(Color(oboptifysphere: "FEFEFE"))
+                            .opacity(0.3)
+                    }
+                    
                     if hemiservanceset {
                         Capsule()
                             .fill(Color(oboptifysphere: "FEFEFE"))
@@ -77,7 +83,7 @@ struct Duoblockanceage: View {
                 .animation(.snappy(duration: 0.6, extraBounce: 0.2), value: hemiservanceset)
             }
             .frame(height: unimetaliketheca(24))
-            .clipShape(Capsule())
+//            .clipShape(Capsule())
             
             HStack(spacing: 16) {
                 HStack(spacing: 4) {

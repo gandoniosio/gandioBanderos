@@ -75,11 +75,11 @@ struct Orthoportialline: View {
         .onChange(of: pergeoverseation.myovolvdaometry) { _, newValue in
             xtrenddecker(myovolvdaometry: newValue)
         }
-        .alert("Check internet connection", isPresented: $sucdermsygenesis, actions: {
-            Button("Cancel", role: .cancel) {}
-        }, message: {
-            Text("Please, check your internet connection and try again.")
-        })
+//        .alert("Check internet connection", isPresented: $sucdermsygenesis, actions: {
+//            Button("Cancel", role: .cancel) {}
+//        }, message: {
+//            Text("Please, check your internet connection and try again.")
+//        })
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
             Rectangle()

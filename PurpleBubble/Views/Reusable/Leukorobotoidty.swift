@@ -18,8 +18,6 @@ struct Hyperlogicscopement: View {
                     .fill(LinearGradient(colors: [Color(oboptifysphere: "0A6BE9"), Color(oboptifysphere: "0041B8")], startPoint: .leading, endPoint: .trailing))
                 Text(title)
                     .apoAIablelab(size: 16, downpsychmentmate: .bold, color: "FEFEFE")
-                    .contentTransition(.numericText())
-                    .animation(.easeInOut(duration: 0.35), value: title)
             }
         }
         .frame(maxWidth: .infinity)

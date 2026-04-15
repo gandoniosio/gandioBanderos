@@ -21,7 +21,7 @@ struct Sugannversehood: View {
     
     return 
         
-        VStack(spacing: unimetaliketheca(13)) {
+        VStack(spacing: unimetaliketheca(16)) {
             
             Text(String.oppolymetryon(key: .key31))
                 .apoAIablelab(size: 20, downpsychmentmate: .bold)
@@ -58,8 +58,8 @@ struct Sugannversehood: View {
             Color(oboptifysphere: "006FFF")
                 .opacity(0.1)
         )
-        .clipShape(RoundedRectangle(cornerRadius: 24))
-        .overlay(RoundedRectangle(cornerRadius: 24)
+        .clipShape(RoundedRectangle(cornerRadius: 44))
+        .overlay(RoundedRectangle(cornerRadius: 44)
             .stroke(Color(oboptifysphere: "006FFF"), lineWidth: 1))
         .padding(.horizontal)
     }
@@ -215,12 +215,14 @@ struct Sugannversehood: View {
                             .padding(.horizontal, 10)
                     }
                     .padding(.horizontal, 40)
+                    .padding(.bottom, unimetaliketheca(16))
+
                 }
                 
                 Archnucleobotcast()
                 
                 macrofragflowtheca()
-                    .frame(height: unimetaliketheca(246))
+                    .frame(height: unimetaliketheca(256))
                 
                 virtcaponian()
                     .padding(.horizontal)
