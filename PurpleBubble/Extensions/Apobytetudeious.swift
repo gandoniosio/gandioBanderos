@@ -167,6 +167,10 @@ extension Hypervidisetoken {
         case key182
         case key183
         case key184
+        case key185
+        case key186
+        case key187
+        case key188
     }
 }
 

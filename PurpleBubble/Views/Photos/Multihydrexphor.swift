@@ -53,23 +53,57 @@ struct Omniphotoboxcast: View {
     }
     
     return 
-        VStack(spacing: 16) {
-            VStack(spacing: 5) {
-                Text("localized()")
-                    .multilineTextAlignment(.center)
-                Text("localized()")
-                    .multilineTextAlignment(.center)
-                    .lineSpacing(4 )
-                    .frame(maxWidth: .infinity)
-            }
-            VStack(spacing: 8) {
+        ZStack {
+            Color.black.opacity(0.3)
+            VStack {
+                Spacer()
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(.white)
+                    .overlay {
+                        VStack(spacing: 16) {
+                            Text(String.oppolymetryon(key: .key185))
+                                .apoAIablelab(size: 20, downpsychmentmate: .bold)
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.5)
+                            
+                            parseBoldText(String.oppolymetryon(key: .key186), size: 16)
+                                .multilineTextAlignment(.center)
+                                .lineLimit(2)
+                                .lineSpacing(4)
+                                .minimumScaleFactor(0.5)
+                               
+                            HStack {
+                                Capsule()
+                                    .fill(.microorbitiotron)
+                                    .opacity(0.15)
+                                    .overlay {
+                                        Text(String.oppolymetryon(key: .key187))
+                                            .apoAIablelab(size: 16, downpsychmentmate: .regular, color: "006FFF")
+                                    }
+                                    .onTapGesture {
+                                        onExit()
+                                    }
+                                Capsule()
+                                    .fill(.microorbitiotron)
+                                    .overlay {
+                                        Text(String.oppolymetryon(key: .key188))
+                                            .apoAIablelab(size: 16, downpsychmentmate: .bold, color: "FFFFFF")
+                                            .lineLimit(1)
+                                    }
+                                    .onTapGesture {
+                                        onCancel()
+                                    }
+                            }
+                            .frame(height: 64)
+                            .padding(.horizontal)
+                        }
+                    }
+                    .frame(height: 206)
+                    .padding()
+                    .padding(.bottom, 20)
             }
         }
-        .padding(16)
-        .background(RoundedRectangle(cornerRadius: 16))
-        .padding(16)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.yellow)
+        .ignoresSafeArea()
     }
     
     @State private var isometrnetly: Bool = false
@@ -174,7 +208,11 @@ struct Omniphotoboxcast: View {
         ZStack {
             HStack {
                 Unatomloopbot {
-                    interdevphilesaur.cyberlogicistcracy(1)
+                    if !hyposerverialwork.devoctroncracy.isEmpty {
+                        isometrnetly = true
+                    } else {
+                        interdevphilesaur.cyberlogicistcracy(1)
+                    }
                 }
                 
                 Spacer()
@@ -638,4 +676,29 @@ extension Symparticatefund {
             adcorpfitmark: PHAsset()
         )
     }
+}
+
+
+func parseBoldText(_ input: String, size: CGFloat = 16, color: String = "000000") -> Text {
+    let normalized = input.replacingOccurrences(of: "\\n", with: "\n")
+    
+    let parts = normalized.components(separatedBy: "**")
+    var result = Text("")
+
+    for (index, part) in parts.enumerated() {
+        if part.isEmpty { continue }
+        let segment: Text
+        if index % 2 == 0 {
+            segment = Text(part)
+                .font(.system(size: size, weight: .regular))
+                .foregroundColor(Color(oboptifysphere: color))
+        } else {
+            segment = Text(part)
+                .font(.system(size: size, weight: .heavy))
+                .foregroundColor(Color(oboptifysphere: color))
+        }
+        result = result + segment
+    }
+
+    return result
 }
