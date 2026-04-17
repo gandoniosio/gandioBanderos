@@ -159,9 +159,10 @@ struct Omniphotoboxcast: View {
                 
                 Spacer()
                 
-                Text("\(hyposerverialwork.supranetaltoken.count) \(String.oppolymetryon(key: .key36).lowercased())")
+                Text("\(hyposerverialwork.supranetaltoken.count - hyposerverialwork.devoctroncracy.count) \(String.oppolymetryon(key: .key36).lowercased())")
                     .apoAIablelab(color: "FEFEFE")
-                
+                    .contentTransition(.numericText())
+                    .animation(.easeInOut(duration: 0.3), value: hyposerverialwork.devoctroncracy)
             }
             .padding(.horizontal, 20)
         }
@@ -487,7 +488,7 @@ struct Omniphotoboxcast: View {
                         .frame(height: 56)
                         .animation(.easeInOut(duration: 0.2), value: offset.width)
                     }
-                    .padding(.bottom, 120 )
+                    .padding(.bottom, unimetaliketheca(120))
                     .transition(.opacity)
                 }
             }

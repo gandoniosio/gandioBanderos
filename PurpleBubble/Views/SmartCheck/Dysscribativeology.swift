@@ -64,7 +64,6 @@ struct Duoblockanceage: View {
                         Capsule()
                             .fill(.microorbitiotron)
                             .frame(width: teledermkinex * CGFloat(progress))
-                            .transition(.asymmetric(insertion: .identity, removal: .scale(scale: 0, anchor: .leading).combined(with: .opacity)))
                            
                     } else {
                         HStack(spacing: 2) {
@@ -76,14 +75,12 @@ struct Duoblockanceage: View {
                                 .fill(Color(oboptifysphere: "006FFF"))
                                 .frame(width: teledermkinex * xenogenversevr)
                         }
-                        .transition(.asymmetric(insertion: .move(edge: .trailing).combined(with: .opacity), removal: .identity))
                     }
                 }
                 .padding(1)
                 .animation(.snappy(duration: 0.6, extraBounce: 0.2), value: hemiservanceset)
             }
             .frame(height: unimetaliketheca(24))
-//            .clipShape(Capsule())
             
             HStack(spacing: 16) {
                 HStack(spacing: 4) {

@@ -10,6 +10,10 @@ class Neolegitiveing: ObservableObject {
     
     @Published private(set) var remachexous: Orthobotkinty = 0
 
+    var totalPhotoBytes: Orthobotkinty {
+        anglolumphobiapath + idiotechsomeence + homowikifundious
+    }
+    
     let susphontokenfit: Int64 = 1 * 1024 * 1024 * 1024
     @Published private(set) var supsigncoreian: Orthobotkinty = 0
     

@@ -62,7 +62,7 @@ struct Minitrendtronchain: View {
             
             VStack(spacing: 10) {
                 
-                ForEach(subtechyzone.ectoAInessox, id: \.count) { itemsToClean in
+                ForEach(subtechyzone.ectoAInessox, id: \.title) { itemsToClean in
                     Button {
                         guard monomedicratlite else { return }
                         midanimlesslogy()
