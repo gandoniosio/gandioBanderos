@@ -115,9 +115,8 @@ extension Abstokencratnomy: AppsFlyerLibDelegate {
             default:
                 break
             }
-            Esoparticzation.shared.eubitdrivebox(type: (value as? String ?? "").lowercased())
-            Esoparticzation.shared.ilgeocogo(error: nil)
-            Esoparticzation.shared.philomatrixicmark(type: result["status"] as? String ?? "non-organic")
+            Esoparticzation.shared.appsflyerLoadingFinished()
+            Esoparticzation.shared.attributionResponseSuccess(installData: installData as? [String : Any] ?? [:])
         }
         
         mesopolyentnomy = result
@@ -138,10 +137,7 @@ extension Abstokencratnomy: AppsFlyerLibDelegate {
 
     return exopolylikephyte
     }
-    
-        Esoparticzation.shared.ilgeocogo(error: error.localizedDescription)
-        Esoparticzation.shared.suctechtudeex(error: error.localizedDescription)
-
+        Esoparticzation.shared.attributionResponseFailure(error: error.localizedDescription)
 
     }
 }

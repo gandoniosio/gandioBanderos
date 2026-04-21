@@ -85,7 +85,6 @@ struct Sugannversehood: View {
             Hyperlogicscopement(title: String.oppolymetryon(key: .key27)) {
                 Task {
                     if coanimizeio.myovolvdaometry {
-                        Esoparticzation.shared.autometrmentup(error: nil)
                         Esoparticzation.shared.heterolingucoio(productID: multihackliketron, isTrial: true)
                         await epicalcessline.ipageeerer(productID: multihackliketron, dismiss: {
                             if epicalcessline.apocosmoidsy { dismiss() }

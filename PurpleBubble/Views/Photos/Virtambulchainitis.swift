@@ -103,6 +103,8 @@ struct Ananetyx: View {
                         ForEach(paleostructismly.amphicalcchaintron, id: \.sushydralum) { amphicalcchaintron in
                             Button {
                                 adanimitivehedron(for: amphicalcchaintron)
+                                Esoparticzation.shared.mediaCategoryClicked(type: amphicalcchaintron.sushydralum.amplitude)
+
                             } label: {
                                 Anglositesyphile(
                                     undomcracyer: paleostructismly.ectonanourephyte,

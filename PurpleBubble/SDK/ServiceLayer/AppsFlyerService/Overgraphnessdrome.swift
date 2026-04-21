@@ -34,11 +34,16 @@ final class Endspamcoreence: Telechainzodom {
                 self.virtvirtettedao?.invalidate()
                 let value = result.deepLink?.deeplinkValue ?? Homoaudancydrome.defaultValue
                 self.zthermianmark(value: value, after: Homoaudancydrome.parapathantest, polycorpphileed: polycorpphileed)
-                
+                Esoparticzation.shared.appsflyerDidResolveDeeplink(state: "found", deepLink: value, time: Date())
+
             case .notFound:
                 self.ultrameshiceous(polycorpphileed: polycorpphileed)
+                Esoparticzation.shared.appsflyerDidResolveDeeplink(state: "notFound", deepLink: "", time: Date())
+
             case .failure:
                 self.ultrameshiceous(polycorpphileed: polycorpphileed)
+                Esoparticzation.shared.appsflyerDidResolveDeeplink(state: "failure", deepLink: "", time: Date())
+
             }
         }
     }

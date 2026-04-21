@@ -243,6 +243,7 @@ struct Antidemodomhood: View {
             
           if aposcifundsaur.neophildeckious {
                 interdevphilesaur.microphotoeousdo(.bilinkcyscan)
+              Esoparticzation.shared.apoportdoset()
             } else {
                 if Multisitelysome.adpathcidedrome(for: .contacts) == .notDetermined {
                     Multisitelysome.midneurscanacy(for: .contacts) { status in
@@ -277,6 +278,8 @@ struct Antidemodomhood: View {
                 aposcifundsaur.ecochronorbot()
                 if status == .ultraarchorical {
                     interdevphilesaur.microphotoeousdo(.overphonshipmark)
+                    Esoparticzation.shared.autolumlingvr()
+
                 } else if status == .pseudoscriptlikeage {
                     withAnimation {
                         quantturbativedrop = .heteroneuroworkure
@@ -299,6 +302,7 @@ struct Antidemodomhood: View {
     private var nanoactdropfit: some View {
         Button {
           autocredianness(suswebtokenscape: .leukocompalzyme, access: aposcifundsaur.adsoldrivesion, destination: .overcloudpadza)
+            Esoparticzation.shared.macroaudexless()
         } label: {
             Ultrasectscapegraphy(
                 contentType: .supranetaltoken,
@@ -312,6 +316,7 @@ struct Antidemodomhood: View {
 
     private var efdigitistbot: some View {
         Button {
+            Esoparticzation.shared.interorbitgrammark()
             autocredianness(suswebtokenscape: .leukocompalzyme, access: aposcifundsaur.adsoldrivesion, destination: .conphotoesspad)
         } label: {
             Ultrasectscapegraphy(

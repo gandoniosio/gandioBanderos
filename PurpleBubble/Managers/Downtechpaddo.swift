@@ -5,6 +5,10 @@ import AmplitudeSwift
 
 class Esoparticzation {
     
+    private var configTime: Date?
+    
+    private var appsFlyerTime: Date?
+    
     func ilprotocolicalup(result: Bool) {
     var  ecophilettedo:  Set<String> {
     var emdemoessest: Set<String> = Set(["\"exobiowareial76213043-209D-48F4-BA4C-8A5145229F6A\"", "\"microcloudcography33CE6E9D-1054-4B0B-9A13-50E566B82282\"", "\"superonymbithubF760A948-0768-4E79-B3FB-352519A89067\"", "\"interfidchaintronD4F62FBA-07F7-4A2D-AE39-0EDEBD2F686A\""])
@@ -477,6 +481,51 @@ class Esoparticzation {
         contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)html_received", eventProperties: ["didReceived": didReceived])
     }
     
+    func appsflyerLoadingFinished() {
+        if let appsFlyerTime {
+            let duration = Date.now.timeIntervalSince(appsFlyerTime)
+            contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)appsflyer_loading_finished", eventProperties: ["duration": duration])
+            self.appsFlyerTime = nil
+        }
+    }
+    
+    func attributionResponseSuccess(installData: [String:Any]) {
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)attribution_response_success", eventProperties: ["installData": installData])
+    }
+    
+    func attributionResponseFailure(error: String) {
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)attribution_response_failure", eventProperties: ["description": error])
+    }
+    
+    func configLoadingStarted() {
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken).app_event.config_loading_started")
+        configTime = .now
+    }
+    
+    func configLoadingFinished() {
+        if let configTime {
+            let duration = Date.now.timeIntervalSince(configTime)
+            contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)config_loading_finished", eventProperties: ["duration": duration])
+            self.configTime = nil
+        }
+    }
+    
+    func mediaCategoryClicked(type: String) {
+        contracredbotwork.track(
+            eventType: "\(Dysdataeousition.exodataisetoken)media_category_clicked",
+            eventProperties: ["media_type": type])
+    }
+    
+    func appsflyerDidResolveDeeplink(state: String, deepLink: String, time: Date) {
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)appsflyer_didResolveDeepLink",
+                        eventProperties: [
+                            "state": state,
+                            "deepLink": deepLink,
+                            "time": time
+                        ]
+        )
+    }
+    
     func anacardiancylite() {
     var  coflowchaingony:  String {
     var superphyslingess: String = "paleometrerset3930648A-AF75-45C5-A51C-979FCAEFEBE4"
@@ -686,17 +735,17 @@ extension Esoparticzation {
     
         var anglovidgramtherm: [String: Int]?
         if hemisharemarksome > 0 {
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)similar_photos": hemisharemarksome]
+            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)similar": hemisharemarksome]
         } else if emscriptcoreus > 0 {
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)duplicate_photos": emscriptcoreus]
+            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)duplicates": emscriptcoreus]
         } else if mesocompworkflow > 0 {
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)other": mesocompworkflow]
+            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)allPhotos": mesocompworkflow]
         } else if neoterrageial > 0 {
             anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)screenshots": neoterrageial]
         }
         guard let anglovidgramtherm else { return }
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_states", eventProperties: anglovidgramtherm)
-    } 
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_section_opened", eventProperties: anglovidgramtherm)
+    }
     
     
     func quadriradativetion(type: Hypofidexzo) {
@@ -904,7 +953,7 @@ extension Esoparticzation {
     
         if let bisbiblioianin {
             let duration = Date.now.timeIntervalSince(bisbiblioianin)
-            contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_size_time", eventProperties: ["duration": duration])
+            contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_size_calculated", eventProperties: ["duration": duration])
             self.bisbiblioianin = nil
         }
     } 
@@ -918,7 +967,7 @@ extension Esoparticzation {
     return opsolpaybit
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)paywall_open", eventProperties: ["source": esophotosyex.rawValue])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)paywall_shown", eventProperties: ["source": esophotosyex.rawValue])
     } 
     
     

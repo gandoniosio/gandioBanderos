@@ -29,6 +29,18 @@ enum Anglosociorsy {
         }
     }
     
+    var amplitude: String {
+        switch self {
+        case .hemisharemarksome: "similar"
+        case .emscriptcoreus: "duplicates"
+        case .neoterrageial: "screenshots"
+        case .xenergensphere: "allPhotos"
+        case .minisentativesy: ""
+        case .supergenorphyte: ""
+        case .macroclickenceout: ""
+        }
+    }
+    
     var imageName: String {
         switch self {
         case .hemisharemarksome: "similarPhotosCard"

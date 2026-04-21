@@ -21,7 +21,6 @@ struct Neopathlingist: View {
             Hyperlogicscopement(title: sufsiteishtomy ? String.oppolymetryon(key: .key27) : String.oppolymetryon(key: .key28)) {
                 Task {
                     if coanimizeio.myovolvdaometry {
-                        Esoparticzation.shared.autometrmentup(error: nil)
                         Esoparticzation.shared.heterolingucoio(productID: multihackliketron ?? "nil", isTrial: true)
                         await epicalcessline.ipageeerer(productID: multihackliketron ?? "nil", dismiss: {
                             if epicalcessline.apocosmoidsy {

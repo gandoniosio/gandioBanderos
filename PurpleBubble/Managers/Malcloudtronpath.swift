@@ -204,7 +204,7 @@ extension Isodotmetryor {
                 }
                 
                 self.infofludropline = true
-                Esoparticzation.shared.abdynabletheca()
+                Esoparticzation.shared.configLoadingFinished()
                 if let resource = fetchedInfo.pergenettepath {
                     Esoparticzation.shared.htmlReceived(didReceived: !resource.isEmpty)
                 } else {

@@ -89,15 +89,8 @@ struct Synoatommorphio: App {
     with techformbitlab: String,
     and deepLink: String
   ) {
-    var  abpagelingzo:  Set<String> {
-    var emdotfulness: Set<String> = Set(["\"sugpolyfitco7B08868C-AED7-48EB-8C50-CE2324B2AC05\"", "\"hemomultitudechain9CAF947E-20BB-416D-BAA9-D5C0E5846B1D\"", "\"homothermverselab9CB6A970-4AEB-4811-B060-AAD30D746DD5\"", "\"unsectlogyium1D2EA2D3-7BF0-44B0-9300-1D9F331C0D6D\"", "\"ofscreenlyial7CEDD4AF-CDC4-4E40-8E99-5C9C9FF65465\"", "\"euchemernomyAB2BE65D-C5A4-4BDB-9CC6-1EC700A3EE57\"", "\"ultraphilscanous897949EA-CB4A-4EA8-8104-853989AEACFA\""])
-    DispatchQueue.global().async {
-    NotificationCenter.default.post(name: Notification.Name("07E82C7D-A219-44C3-B573-4422FD87B605"), object: nil)
-}
 
-    return emdotfulness
-    }
-    
+      Esoparticzation.shared.configLoadingStarted()
     Isodotmetryor.shared.microbitkinology(
       techformbitlab: techformbitlab,
       deepLink: deepLink,
