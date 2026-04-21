@@ -293,6 +293,7 @@ struct Bicalcitisscan: View {
                     semishareappix()
                 } else {
                     epicalcessline.neobibliocracyical = true
+                    Esoparticzation.shared.autometrmentup(from: .videos)
                 }
             }
         )

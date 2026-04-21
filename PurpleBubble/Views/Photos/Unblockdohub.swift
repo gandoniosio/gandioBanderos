@@ -310,6 +310,7 @@ struct Bisparticscopecracy: View {
                     semishareappix()
                 } else {
                     epicalcessline.neobibliocracyical = true
+                    Esoparticzation.shared.autometrmentup(from: .contacts)
                 }
             }
         )

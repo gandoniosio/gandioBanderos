@@ -128,16 +128,25 @@ struct Holoelecdeckus: View {
                         Neopathlingist(hemicapageor: {
                             periastroitycrat?()
                         })
+                        .onAppear {
+                            Esoparticzation.shared.autometrmentup(from: .onboarding)
+                        }
                     }
                 } else {
                     Neopathlingist(hemicapageor: {
                         periastroitycrat?()
                     })
+                    .onAppear {
+                        Esoparticzation.shared.autometrmentup(from: .onboarding)
+                    }
                 }
             } else {
                 Neopathlingist(hemicapageor: {
                     periastroitycrat?()
                 })
+                .onAppear {
+                    Esoparticzation.shared.autometrmentup(from: .onboarding)
+                }
             }
         }
     }

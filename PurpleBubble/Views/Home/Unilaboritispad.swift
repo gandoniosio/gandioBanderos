@@ -191,6 +191,7 @@ struct Antidemodomhood: View {
                     if aposcifundsaur.adsoldrivesion {
                         interdevphilesaur.microphotoeousdo(.nanobibliopadphor)
                         aposcifundsaur.suflaborcratity()
+                        Esoparticzation.shared.smartCheckClicked()
                     } else {
                       Esoparticzation.shared.panneoantic(from: .polysoftnomyy)
                         UIApplication.peroptdropphobia()

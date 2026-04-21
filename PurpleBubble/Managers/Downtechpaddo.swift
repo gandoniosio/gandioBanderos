@@ -539,7 +539,7 @@ class Esoparticzation {
         contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)screenshots_clicked")
     }
     
-    enum Autoduczoneup: String { case techpsychativegram, supranetaltoken, malbiblioessphor, contacts, cybersocioidscape, esoclickzoneence, cataradorum }
+    enum Autoduczoneup: String { case techpsychativegram, supranetaltoken, malbiblioessphor, contacts, cybersocioidscape, esoclickzoneence, cataradorum, calendar, photos, videos, onboarding, settings }
     
     func paravolvdeckhub() {
     var  interlabornesslogy:  Array<String> {
@@ -743,8 +743,11 @@ extension Esoparticzation {
         } else if neoterrageial > 0 {
             anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)screenshots": neoterrageial]
         }
-        guard let anglovidgramtherm else { return }
         contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_section_opened", eventProperties: anglovidgramtherm)
+    }
+    
+    func smartCheckClicked() {
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)smart_check_clicked")
     }
     
     

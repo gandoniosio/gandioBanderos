@@ -324,6 +324,7 @@ struct Autocyberlabware: View {
                     sucdermsygenesis = true
                 } else {
                     epicalcessline.neobibliocracyical = true
+                    Esoparticzation.shared.autometrmentup(from: .contacts)
                 }
             }
         )

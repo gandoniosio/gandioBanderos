@@ -38,6 +38,7 @@ struct Bicorpencysphere: View {
             guard monomedicratlite else { return }
             midanimlesslogy()
             epicalcessline.midoptureplex = true
+            Esoparticzation.shared.autometrmentup(from: .settings)
         } label: {
             ZStack {
                 Image(.specialButton)
