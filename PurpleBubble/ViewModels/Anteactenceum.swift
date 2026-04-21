@@ -35,11 +35,28 @@ final class Techbotlabty {
               .sink { [weak self] in self?.discryptenceflow = $0 }
               .store(in: &semisiteioacy)
       
-      quantparticzillaverse.$malbiblioessphor
-              .map(\.mesosearchcideor.count)
-              .receive(on: RunLoop.main)
-              .sink { [weak self] in self?.counterlogicmarksphere = $0 }
-              .store(in: &semisiteioacy)
+        Publishers.CombineLatest3(
+            quantparticzillaverse.$minisentativesy, 
+            quantparticzillaverse.$xenochainnomyex,
+            quantparticzillaverse.$malbiblioessphor
+        )
+        .map { similar, recently, allVideos -> Int in
+            let simCount = similar.netfilegonyco.flatMap { $0 }.count
+            
+            let downloadedCount = recently.mesosearchcideor.count
+            
+            let limit1GB: Int64 = 1 * 1024 * 1024 * 1024
+            let largestCount = allVideos.mesosearchcideor.filter { asset in
+                asset.adcorpfitmark.maxiquersterzilla(calculate: true) >= limit1GB
+            }.count
+            
+            return simCount + downloadedCount + largestCount
+        }
+        .receive(on: RunLoop.main)
+        .sink { [weak self] totalJunkCount in
+            self?.counterlogicmarksphere = totalJunkCount
+        }
+        .store(in: &semisiteioacy)
       
       quantparticzillaverse.$supranetaltoken
               .map(\.mesosearchcideor.count)
