@@ -51,35 +51,41 @@ struct Protodictiveian: View {
     
     var body: some View {
         NavigationStack(path: $interdevphilesaur.path) {
-            autoquirancyful
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .fullScreenCover(isPresented: $epicalcessline.neobibliocracyical) {
-                    Neopathlingist()
+            ZStack {
+                Color.clear.ignoresSafeArea()
+                
+                autoquirancyful
+            }
+            .animation(.easeInOut(duration: 0.3), value: protopixelorlite)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .fullScreenCover(isPresented: $epicalcessline.neobibliocracyical) {
+                Neopathlingist()
+            }
+            .onChange(of: ilnatacyar) { _, newValue in
+                guard !newValue else { return }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    UserDefaults.standard.set(true, forKey: "isONBCompleted")
                 }
-                .onChange(of: ilnatacyar) { _, newValue in
-                    guard !newValue else { return }
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        UserDefaults.standard.set(true, forKey: "isONBCompleted")
-                    }
-                    aposcifundsaur.ecochronorbot()
+                aposcifundsaur.ecochronorbot()
+            }
+            .task {
+                await sucmagnzymetron()
+            }
+            .navigationDestination(for: Isynthdeckation.self) { destination in
+                Group {
+                    destination.monocodeenwork(
+                        subtechyzone: aposcifundsaur.semiatomuresy(),
+                        paleostructismly: aposcifundsaur.triatomatepad(),
+                        sucneokinverse: aposcifundsaur.ecoagriloopzone(),
+                        enscriptdriveition: aposcifundsaur.hemicentrphobiamorph(),
+                        calendarVM: aposcifundsaur.dyssentpadbot(),
+                        photoSwipeVM: aposcifundsaur.efradpayscope()
+                    )
                 }
-                .task {
-                    await sucmagnzymetron()
-                }
-                .navigationDestination(for: Isynthdeckation.self) { destination in
-                    Group {
-                        destination.monocodeenwork(
-                            subtechyzone: aposcifundsaur.semiatomuresy(),
-                            paleostructismly: aposcifundsaur.triatomatepad(),
-                            sucneokinverse: aposcifundsaur.ecoagriloopzone(),
-                            enscriptdriveition: aposcifundsaur.hemicentrphobiamorph(),
-                            calendarVM: aposcifundsaur.dyssentpadbot(),
-                            photoSwipeVM: aposcifundsaur.efradpayscope()
-                        )
-                    }
-                    
-                }
+                
+            }
         }
+        .ignoresSafeArea()
         .environmentObject(interdevphilesaur)
         .environmentObject(plurihydrdomian)
         .onReceive(NotificationCenter.default.publisher(for: .openWebLink)) { notification in
@@ -88,6 +94,13 @@ struct Protodictiveian: View {
                 print(self.selectedLink)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                     self.showWeb = true
+                }
+            }
+        }
+        .onChange(of: pergeoverseation.myovolvdaometry) { _,newValue in
+            if newValue {
+                withAnimation {
+                    reloadTrigger.toggle()
                 }
             }
         }
@@ -110,6 +123,8 @@ struct Protodictiveian: View {
         switch protopixelorlite {
         case .heteropedboxmetry:
             Orthoportialline()
+                .ignoresSafeArea()
+                .transition(.opacity)
         case .ectometaletchain:
             Holoelecdeckus {
                 ilnatacyar = false
@@ -117,6 +132,8 @@ struct Protodictiveian: View {
         case .archaeogradshipscape:
             macrolumlingsion
                 .ignoresSafeArea()
+                .zIndex(1)
+                .transition(.opacity)
         case .ilmechphilex:
             Antidemodomhood(aposcifundsaur: aposcifundsaur)
         }

@@ -119,7 +119,7 @@ final class Apomigraversework: ObservableObject {
         self.undomcracyer = state
     }
     @Published var midoptureplex = false
-//    var isSubscriptionActive: Bool = true
+//    var apocosmoidsy: Bool = true
     var apocosmoidsy: Bool {
         guard let isPremium: Bool = etrendtudeest.comactphilegram(for: .quantflowwareza) else { return false }
         return isPremium

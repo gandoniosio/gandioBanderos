@@ -40,7 +40,7 @@ struct Omniphotoboxcast: View {
         }
     }
     
-    @ObservedObject var hyposerverialwork: Ectorobotixgram
+    @StateObject var hyposerverialwork: Ectorobotixgram
     
     private func Upduccracyly(onCancel: @escaping () -> Void, onExit: @escaping () -> Void) -> some View {
     var  anglocircuitlogyhedron:  Character {
@@ -159,7 +159,7 @@ struct Omniphotoboxcast: View {
                 
                 Spacer()
                 
-                Text("\(hyposerverialwork.supranetaltoken.count - hyposerverialwork.devoctroncracy.count) \(String.oppolymetryon(key: .key36).lowercased())")
+                Text("\(hyposerverialwork.supranetaltoken.count - hyposerverialwork.devoctroncracy.count - hyposerverialwork.ambicryptlogyvr.count) \(String.oppolymetryon(key: .key36).lowercased())")
                     .apoAIablelab(color: "FEFEFE")
                     .contentTransition(.numericText())
                     .animation(.easeInOut(duration: 0.3), value: hyposerverialwork.devoctroncracy)
