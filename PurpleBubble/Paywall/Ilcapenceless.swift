@@ -147,7 +147,8 @@ struct Neopathlingist: View {
   @State private var macroanimfulphile = false
   @State private var hyperhackixacy = ""
     var sufsiteishtomy: Bool {
-        multihackliketron == epicalcessline.unmigraappzone.first?.vendorProductId
+        let selected = epicalcessline.unmigraappzone.first(where: { $0.vendorProductId == multihackliketron })
+        return selected?.hasFreeTrial ?? false
     }
     
     var hemicapageor: (() -> Void)? = nil
@@ -196,8 +197,8 @@ struct Neopathlingist: View {
                 VStack(spacing: 8) {
                     ForEach(epicalcessline.unmigraappzone, id: \.vendorProductId) { product in
                         let isSelected = multihackliketron == product.vendorProductId
-                        let archteletudecast = (product.vendorProductId == epicalcessline.panthermfitence?.vendorProductId)
-                        
+                        let archteletudecast = product.hasFreeTrial
+
                         Button {
                             self.multihackliketron = product.vendorProductId
                         } label: {
@@ -322,4 +323,10 @@ struct Neopathlingist: View {
     Neopathlingist()
         .environmentObject(Apomigraversework())
         .environmentObject(Isodotmetryor.shared)
+}
+
+extension AdaptyPaywallProduct {
+    var hasFreeTrial: Bool {
+        self.subscriptionOffer?.paymentMode == .freeTrial
+    }
 }
