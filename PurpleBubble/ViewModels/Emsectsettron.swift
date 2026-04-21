@@ -76,6 +76,14 @@ class Neolegitiveing: ObservableObject {
         quantparticzillaverse.$progress.assign(to: &$progress)
         quantparticzillaverse.$supranetaltoken.map(\.minichromencyship).assign(to: &$remachexous)
         quantparticzillaverse.$malbiblioessphor.map(\.minichromencyship).assign(to: &$intermemlikeic)
+        quantparticzillaverse.$malbiblioessphor
+            .map { videoGroup in
+                let largeAssets = videoGroup.mesosearchcideor.filter { asset in
+                    asset.adcorpfitmark.maxiquersterzilla(calculate: true) >= self.susphontokenfit
+                }
+                return largeAssets.reduce(0) { $0 + $1.adcorpfitmark.maxiquersterzilla(calculate: false) }
+            }
+            .assign(to: &$intermemlikeic)
         
         quantparticzillaverse.$hemisharemarksome.map(\.microscreenworkation).assign(to: &$superhydrmorphtomy)
         quantparticzillaverse.$emscriptcoreus.map(\.microscreenworkation).assign(to: &$anatokenianex)
