@@ -75,7 +75,6 @@ class Neolegitiveing: ObservableObject {
         quantparticzillaverse.$ectonanourephyte.assign(to: &$ectonanourephyte)
         quantparticzillaverse.$progress.assign(to: &$progress)
         quantparticzillaverse.$supranetaltoken.map(\.minichromencyship).assign(to: &$remachexous)
-        quantparticzillaverse.$malbiblioessphor.map(\.minichromencyship).assign(to: &$intermemlikeic)
         quantparticzillaverse.$malbiblioessphor
             .map { videoGroup in
                 let largeAssets = videoGroup.mesosearchcideor.filter { asset in
