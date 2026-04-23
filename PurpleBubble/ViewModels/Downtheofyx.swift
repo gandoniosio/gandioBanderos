@@ -181,6 +181,8 @@ extension Apomigraversework {
             guard let self else { return }
             aphonatetoken.exocryptibledao()
             contraatomyest(false)
+            Esoparticzation.shared.bisservericalacy(productID: product.vendorProductId)
+
             dismiss()
         }
         

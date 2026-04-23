@@ -101,6 +101,9 @@ struct Sucenerglabence: View {
                 }
             }
         }
+        .onAppear {
+            Esoparticzation.shared.microalgiansome(minisentativesy: sucneokinverse.allodataifyous, neuroelecflowdom: sucneokinverse.relegenition, endlinkencracy: sucneokinverse.conucleolingphobia)
+        }
         .onChange(of: ambisolageous) { _ in }
         .fullScreenCover(isPresented: $interhubivepath) {
             Virtscreenphilebot(sushydralum: ambisolageous) {

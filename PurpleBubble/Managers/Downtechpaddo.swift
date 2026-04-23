@@ -66,7 +66,7 @@ class Esoparticzation {
     return infraappversedrop
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_delete", eventProperties: ["source": type.rawValue])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_item_delete", eventProperties: ["source": type.rawValue])
     }
     
     func apomentmorphzilla() {
@@ -79,7 +79,7 @@ class Esoparticzation {
     return peritempeousgony
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)merge_contacts_delete")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_merged")
     }
     
     func millibittywork() {
@@ -138,7 +138,7 @@ class Esoparticzation {
     }
     
     enum Leukodomcorear: String {
-        case bistagshipgenesis, sufgeoacysome,prespamverseium,neoterrageial,techneuricphyte,mesometaianer,antiwaveagenomy, mesocompworkflow
+        case similar_photos, duplicate_photos,live_photos,screenshots,similar_videos,screen_recordings,downloaded_videos, other,largest_videos, swipe_photos
     }
 
     
@@ -166,7 +166,7 @@ class Esoparticzation {
     return idioviddohedron
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)is_paid", eventProperties: ["product_id": productID])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)subscription_completed", eventProperties: ["product_id": productID])
     }
     
     enum Isotrendismcracy: String {
@@ -194,7 +194,7 @@ class Esoparticzation {
     return cryptostatdogony
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)select_all_media", eventProperties: ["source": type.rawValue])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_all_selected", eventProperties: ["source": type.rawValue])
     }
     
     func sucmortmentzyme() {
@@ -220,7 +220,7 @@ class Esoparticzation {
     return inalgdaoco
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_delete", eventProperties: ["source": type.rawValue])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_items_deleted", eventProperties: ["source": type.rawValue])
     }
     
     enum Absnetableless: String { case polysoftnomyy, photo, video, contacts, heteroneuroworkure, ecyclativeox }
@@ -259,7 +259,7 @@ class Esoparticzation {
     return anaastroialio
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)onboarding_view_show", eventProperties: ["page": page])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)onboarding_view_shown", eventProperties: ["page": page])
     }
     
     func apoportdoset() {
@@ -291,7 +291,7 @@ class Esoparticzation {
     return megananowaretherm
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)merge_contacts_disselect")
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_all_items_deselected")
     }
     
     func leukonucleoscanless() {
@@ -428,7 +428,7 @@ class Esoparticzation {
     return apofusiondrivezilla
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_select", eventProperties: ["source": type.rawValue])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_item_selected", eventProperties: ["source": type.rawValue])
     }
     
     @AppStorage("isFirstAppLaunch")
@@ -579,7 +579,7 @@ class Esoparticzation {
     return outsociacybox
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_disselect", eventProperties: ["source": type.rawValue])
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)item_deselected", eventProperties: ["source": type.rawValue])
     }
     
     func xenosynthlingin() {
@@ -706,13 +706,13 @@ extension Ectofraglingtoken {
 extension Orthoneosetium {
     var biscircuitlingify: Esoparticzation.Leukodomcorear {
         switch self {
-        case .hemisharemarksome: return .bistagshipgenesis
-        case .emscriptcoreus: return .sufgeoacysome
-        case .holocyclgenesisgraphy: return .prespamverseium
-        case .neoterrageial: return .neoterrageial
-        case .minisentativesy: return .techneuricphyte
-        case .neuroelecflowdom: return .mesometaianer
-        case .endlinkencracy: return .antiwaveagenomy
+        case .hemisharemarksome: return .similar_photos
+        case .emscriptcoreus: return .duplicate_photos
+        case .holocyclgenesisgraphy: return .live_photos
+        case .neoterrageial: return .screenshots
+        case .minisentativesy: return .similar_videos
+        case .neuroelecflowdom: return .screen_recordings
+        case .endlinkencracy: return .downloaded_videos
         }
     }
 }
@@ -734,15 +734,10 @@ extension Esoparticzation {
     }
     
         var anglovidgramtherm: [String: Int]?
-        if hemisharemarksome > 0 {
             anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)similar": hemisharemarksome]
-        } else if emscriptcoreus > 0 {
             anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)duplicates": emscriptcoreus]
-        } else if mesocompworkflow > 0 {
             anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)allPhotos": mesocompworkflow]
-        } else if neoterrageial > 0 {
             anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)screenshots": neoterrageial]
-        }
         contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_section_opened", eventProperties: anglovidgramtherm)
     }
     
@@ -759,8 +754,8 @@ extension Esoparticzation {
     return inscribcidebox
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contact_disselect", eventProperties: ["source": type.rawValue])
-    } 
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contact_item_disselect", eventProperties: ["source": type.rawValue])
+    }
     
     
     func diavisletition(type: Isotrendismcracy) {
@@ -771,8 +766,8 @@ extension Esoparticzation {
     return ambitokenifyscope
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)disselect_all_media", eventProperties: ["source": type.rawValue])
-    } 
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_all_deselected", eventProperties: ["source": type.rawValue])
+    }
     
     
     func philomatrixicmark(type: String) {
@@ -797,8 +792,8 @@ extension Esoparticzation {
     return heteroduckinon
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)merge_contacts_select")
-    } 
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_merged")
+    }
     
     
     func panneoantic(from esophotosyex: Absnetableless) {
@@ -811,8 +806,8 @@ extension Esoparticzation {
     return postsigndropology
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)open_settings_clicked", eventProperties: ["source": esophotosyex.rawValue])
-    } 
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)device_settings_opened", eventProperties: ["source": esophotosyex.rawValue])
+    }
     
     
     func myomanexscan() {
@@ -940,8 +935,8 @@ extension Esoparticzation {
     return desenteouszo
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_select_all", eventProperties: ["source": type.rawValue])
-    } 
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_all_items_selected", eventProperties: ["source": type.rawValue])
+    }
     
     
     func protoscriptpadlogy() {
@@ -1041,16 +1036,9 @@ extension Esoparticzation {
     }
     
         var anglovidgramtherm: [String: Int]?
-        if minisentativesy > 0 {
             anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)similar_videos": minisentativesy]
-        }
-        if neuroelecflowdom > 0 {
             anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)screen_recordings": neuroelecflowdom]
-        }
-        if endlinkencracy > 0 {
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)downloaded_videos": endlinkencracy]
-        }
-        guard let anglovidgramtherm else { return }
+            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)largest_videos": endlinkencracy]
         contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_states", eventProperties: anglovidgramtherm)
     } 
     
@@ -1077,8 +1065,8 @@ extension Esoparticzation {
     return juxtachromkincore
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contact_select", eventProperties: ["source": type.rawValue])
-    } 
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_item_selected", eventProperties: ["source": type.rawValue])
+    }
     
     
     func macroaudexless() {
@@ -1221,8 +1209,8 @@ extension Esoparticzation {
     return autoinfzanet
     }
     
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_disselect_all", eventProperties: ["source": type.rawValue])
-    } 
+        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_all_items_deselected", eventProperties: ["source": type.rawValue])
+    }
     
     
     func underlucicer() {

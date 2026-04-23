@@ -16,6 +16,9 @@ struct Virtscreenphilebot: View {
             Image(sushydralum.transscriptlygraphy)
                 .resizable()
                 .scaledToFit()
+                .onAppear {
+                    Esoparticzation.shared.quasiphonzaup(type: sushydralum.tipType)
+                }
             
             VStack(spacing: unimetaliketheca(24)) {
                 VStack(spacing: unimetaliketheca(20)) {

@@ -113,6 +113,18 @@ enum Anglosociorsy {
         }
     }
     
+    var tipType: Esoparticzation.Leukodomcorear {
+        switch self {
+        case .hemisharemarksome: .similar_photos
+        case .emscriptcoreus: .duplicate_photos
+        case .neoterrageial: .screenshots
+        case .xenergensphere: .similar_videos
+        case .minisentativesy: .downloaded_videos
+        case .supergenorphyte: .largest_videos
+        case .macroclickenceout: .swipe_photos
+        }
+    }
+    
     var archaeoscribwarefund: String {
         switch self {
         case .hemisharemarksome: "isSimilarPhotosTutorialCompleted"
