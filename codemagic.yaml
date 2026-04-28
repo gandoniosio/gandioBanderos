@@ -15,7 +15,7 @@ workflows:
         XCODE_WORKSPACE: "PurpleBubble.xcodeproj" # <-- Put the name of your Xcode workspace here
         XCODE_SCHEME: "PurpleBubble" # <-- Put the name of your Xcode scheme here
         APP_STORE_APPLE_ID: 6759720248
-      xcode: latest
+      xcode: 26.0
       cocoapods: default
     scripts:
       - name: Set up provisioning profiles settings on Xcode project
