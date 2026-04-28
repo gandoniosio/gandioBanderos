@@ -25,7 +25,6 @@ workflows:
           xcode-project build-ipa \
             --project "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
             --scheme "$XCODE_SCHEME"
-            --args "SWIFT_VERSION=5.0"
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
