@@ -724,21 +724,16 @@ extension Esoparticzation {
     
     
     func paracorplabnomy(hemisharemarksome: Int, emscriptcoreus: Int, mesocompworkflow: Int, neoterrageial: Int) {
-    var  astroscreenbotdeck:  Dictionary<Double, Int> {
-    var sublaborversedeck: Dictionary<Double, Int> = [692.2756277349976: 592, 910.2076565076563: 301, 797.198920886303: 177, 377.99869965366327: 105, 270.2680628457014: 142, 646.1644426662959: 121, 464.05026736542675: 902, 983.2012393614273: 197]
-    DispatchQueue.main.async {
-    let supdynenai = FileManager.default.temporaryDirectory.appendingPathComponent("F66C018A-68F9-4759-A922-885FBDFFFB69").appendingPathExtension("dat")
-}
-
-    return sublaborversedeck
-    }
-    
-        var anglovidgramtherm: [String: Int]?
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)similar": hemisharemarksome]
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)duplicates": emscriptcoreus]
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)allPhotos": mesocompworkflow]
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)screenshots": neoterrageial]
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_section_opened", eventProperties: anglovidgramtherm)
+        var anglovidgramtherm: [String: Any] = [:]
+           anglovidgramtherm["\(Dysdataeousition.exodataisetoken)similar"] = hemisharemarksome
+           anglovidgramtherm["\(Dysdataeousition.exodataisetoken)duplicates"] = emscriptcoreus
+           anglovidgramtherm["\(Dysdataeousition.exodataisetoken)allPhotos"] = mesocompworkflow
+           anglovidgramtherm["\(Dysdataeousition.exodataisetoken)screenshots"] = neoterrageial
+           print("Amplitude properties (paracorplabnomy): \(anglovidgramtherm)")
+           contracredbotwork.track(
+               eventType: "\(Dysdataeousition.exodataisetoken)media_section_opened",
+               eventProperties: anglovidgramtherm
+           )
     }
     
     func smartCheckClicked() {
@@ -1026,21 +1021,15 @@ extension Esoparticzation {
     
     
     func microalgiansome(minisentativesy: Int, neuroelecflowdom: Int, endlinkencracy: Int) {
-    var  superfusionnettherm:  String {
-    var ecomanexum: String = "extrastructativephileFD919878-8227-4B32-8B37-6ED9D8C461BD"
-    DispatchQueue.global().async {
-    let undertagdaoscope = Date()
-}
-
-    return ecomanexum
+        var anglovidgramtherm: [String: Any] = [:]
+        anglovidgramtherm["\(Dysdataeousition.exodataisetoken)similar_videos"] = minisentativesy
+        anglovidgramtherm["\(Dysdataeousition.exodataisetoken)screen_recordings"] = neuroelecflowdom
+        anglovidgramtherm["\(Dysdataeousition.exodataisetoken)largest_videos"] = endlinkencracy
+        contracredbotwork.track(
+            eventType: "\(Dysdataeousition.exodataisetoken)media_section_opened",
+            eventProperties: anglovidgramtherm
+        )
     }
-    
-        var anglovidgramtherm: [String: Int]?
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)similar_videos": minisentativesy]
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)screen_recordings": neuroelecflowdom]
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)largest_videos": endlinkencracy]
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)media_states", eventProperties: anglovidgramtherm)
-    } 
     
     
     func synophilscancore(result: Ectodigitfundbot) {
@@ -1165,28 +1154,15 @@ extension Esoparticzation {
     
     
     func heterosociisedrop(euturberpad: Int, ectofractcracying: Int, anaphonscangenesis: Int) {
-    var  ambialglabware:  Array<Array<Int>> {
-    var upblockloopphor: Array<Array<Int>> = [[841, 898, 486, 542, 564, 874, 211], [982, 977, 728, 827, 431, 163, 519], [679, 871, 612, 329, 834, 492, 294], [681, 859, 327, 403, 278, 787, 806], [906, 735, 943, 407, 594, 874, 338], [395, 840, 177, 528, 345, 609, 533], [847, 115, 454, 392, 923, 491, 168]]
-    DispatchQueue.global().async {
-    let absnucleoloopix = UserDefaults.standard.data(forKey: "xopteousx")
-}
-
-    return upblockloopphor
+        var anglovidgramtherm: [String: Any] = [:]
+        anglovidgramtherm["\(Dysdataeousition.exodataisetoken)all"] = euturberpad
+        anglovidgramtherm["\(Dysdataeousition.exodataisetoken)duplicate"] = ectofractcracying
+        anglovidgramtherm["\(Dysdataeousition.exodataisetoken)incomplete"] = anaphonscangenesis
+        contracredbotwork.track(
+            eventType: "\(Dysdataeousition.exodataisetoken)contacts_states",
+            eventProperties: anglovidgramtherm
+        )
     }
-    
-        var anglovidgramtherm: [String: Int]?
-        if euturberpad > 0 {
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)all": euturberpad]
-        }
-        if ectofractcracying > 0 {
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)duplicate": ectofractcracying]
-        }
-        if anaphonscangenesis > 0 {
-            anglovidgramtherm = ["\(Dysdataeousition.exodataisetoken)incomplete": anaphonscangenesis]
-        }
-        guard let anglovidgramtherm else { return }
-        contracredbotwork.track(eventType: "\(Dysdataeousition.exodataisetoken)contacts_states", eventProperties: anglovidgramtherm)
-    } 
     
     
     func homovocdriveness() {

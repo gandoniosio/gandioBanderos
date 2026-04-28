@@ -91,13 +91,8 @@ struct Holoelecdeckus: View {
                             Esoparticzation.shared.ilprotocolicalup(result: status == .ultraarchorical)
                             
                             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                                if epicalcessline.apocosmoidsy {
-                                    dismiss()
-                                  periastroitycrat?()
-                                } else {
                                     suclogiclyence += 1
                                     Esoparticzation.shared.macrometaureio(page: suclogiclyence)
-                                }
                             }
                         }
 
